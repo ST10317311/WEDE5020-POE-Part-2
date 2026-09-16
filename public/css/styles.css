@@ -1,0 +1,29 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Default styles */
+a {
+    text-decoration: none;
+}
+
+#InstantContactsSection {
+    width: 100%;
+    background-color: #c9071d ;
+}
+
+#InstantContactsSection > header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+#InstantContactsSection header > span {
+    padding: 8px 16px;
+}
