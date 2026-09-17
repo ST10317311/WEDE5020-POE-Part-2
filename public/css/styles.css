@@ -1,16 +1,27 @@
-/* Base Styles */
+/* Base Style resets*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: 0;
     font-family: sans-serif;
 }
 
 /* Default styles */
 a {
     text-decoration: none;
+    display: inline-flex;
+    flex-direction: row;
+    padding: 12px 16px;
+    font-size: 14px;
 }
 
+span {
+    padding: 12px 16px;
+    color: white;
+}
+
+/* Custom Styles */
 #InstantContactsSection {
     width: 100%;
     background-color: #c9071d ;
@@ -21,13 +32,26 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    color: white;
-}
-
-#InstantContactsSection header > span {
-    padding: 8px 16px;
 }
 
 #NavbarSection {
-    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 12px;
+    padding-inline: 12px;
+}
+
+#NavbarSection a > img {
+    height: 56px;
+}
+
+#NavbarSection nav > a {
+    color: black;
+}
+
+#NavbarSection > #BookNowButton {
+    background-color: #c9071d;
+    color: white;
 }
