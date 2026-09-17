@@ -53,6 +53,7 @@ span {
 #NavbarSection > #BookNowButton {
     background-color: #c9071d;
     color: white;
+    flex-shrink: 1;
 }
 
 #HeroSection {
@@ -128,3 +129,32 @@ aside > #HeroSubtitle {
     align-content: center;
 }
 
+#OurServicesSection {
+    background-color: #0e1720;
+    padding: 32px
+}
+
+.theDrainSurgeonIconLogo {
+    width: 64px;
+
+}
+
+#OurServicesSection > #ServicesTitle {
+    color: white;
+    font-size: 48px;
+}
+
+#OurServicesSection > div {
+    color: white;
+    list-style-type: url();
+}
+
+#OurServicesSection div > p {
+    display: block;
+}
+
+.grid_listOfServices {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(2, 1fr));
+    grid-template-rows: repeat(1,minmax(1, 1fr));
+}
