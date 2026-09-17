@@ -34,23 +34,32 @@
             <a href="/franchisingPage.html" id="FranchisingLink">Franchising</a>
         </nav>
 
-        <a href="/bookNowPage.html" id="BookNowButton" class="bg-red-600 text-white px-4 py-2">Book Now</a>
+        <a href="/bookNowPage.html" id="BookNowButton" class="">Book Now</a>
 
     </section>
 
-    <section id="HeroSection">
+    <section id="HeroSection" class="grid grid-col">
 
-        <img src="/plumbersImage.png" alt="A picture of plumbers standing next to each other in a row">
+        <div id="HeroSection_ImageContainer">
+            <img src="./public/images/plumber_in_red_uniform.webp" alt="A picture of plumbers standing next to each other in a row">
+        </div>
 
-        <aside>
-            <span>Available in over 50 locations</span>
-            <h1>We repair broken pipes for residential and commercial buildings</h1>
-            <p>Any leak, burst pipe, drain replacement, we are there for you.</p>
-        </aside>
+        <div id="HeroSection_Text">
+            <div id="InlineBlockOne">
+                <aside>
+                    <p id="AvailabilityBadge">Available in over 50 locations</p>
+                    <h1 id="HeroTitle">We repair broken pipes for residential and commercial buildings</h1>
+                    <i id="HeroSubtitle">"Any leak, burst pipe, drain replacement, we are there for you." - The Drain Surgeon</i>
+                </aside>
+                
+                <div id="HeroButtons">
+                    <a id="ServicesButton" href="/servicesPage.html">Services</a>
+                    <a id="BookNowButton" href="/bookNowPage.html">Book Now</a>
+                </div>
+            </div>
+        </div>
+        
 
-        <a href="/servicesPage.html">Services</a>
-
-        <a href="/bookNowPage.html">Book Now</a>
     </section>
 
     <section id="OurServicesSection">
