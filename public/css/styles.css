@@ -18,7 +18,6 @@ a {
 
 span {
     padding: 12px 16px;
-    color: white;
 }
 
 /* Custom Styles */
@@ -54,4 +53,77 @@ span {
 #NavbarSection > #BookNowButton {
     background-color: #c9071d;
     color: white;
+}
+
+#HeroSection {
+    display: grid;
+    /* The repeat function repeats the number of times a column must appear. In this case it is two, meaning two columns. And the minimum/maximum width of the columns must range between 0 and one fractional unit respectively. So because it is two columns, they will take up 1 fractional unit each. */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+    column-gap: 12px;
+    padding: 12px;
+}
+
+#HeroSection_ImageContainer {
+    /* border: 1px solid black; */
+    border-radius: 16px;
+    aspect-ratio: 1/1;
+}
+
+#HeroSection_ImageContainer > img {
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#HeroSection_Text {
+    display: grid;
+    align-items: center;
+    padding: 12px;
+}
+
+#InlineBlockOne {
+    display: inline-block;
+}
+
+#AvailabilityBadge {
+    display: inline-block;
+    background-color: #c9071d;
+    border-radius: 8px;
+    color: white;
+    border: 2px solid #d08282;
+    padding: 8px;
+}
+
+aside > h1 {
+    font-size: 3rem;
+}
+
+aside > #HeroSubtitle {
+    font-size: 1.2rem;
+}
+
+#HeroButtons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+    padding-top: 14px;
+}
+
+#ServicesButton{
+    flex-grow: 1;
+    border: 2px solid #c9071d;
+    color: #c9071d;
+    border-radius: 12px;
+    justify-content: center;
+}
+
+#BookNowButton {
+    flex-grow: 1;
+    background-color: #c9071d;
+    color: white;
+    border-radius: 12px;
+    justify-content: center;
+    align-content: center;
 }
