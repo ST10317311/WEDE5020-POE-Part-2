@@ -63,36 +63,49 @@
 
     </section>
 
-    <section id="HeroSection" class="">
-        <div class="grid grid-cols-2 grid-rows-1">
-            <div id="HeroSection_ImageContainer" class="pl-4 py-4 pr-2 aspect-square rounded-xl">
+    <!-- Hero Section -->
+    <section id="HeroSection" class="grid justify-center">
+        <div class="max-w-5xl grid grid-cols-2 grid-rows-1 gap-x-8">
+
+            <!-- Hero Section Image -->
+            <div id="HeroSection_ImageContainer" class="p-4 aspect-square rounded-xl">
                 <img src="./public/images/plumber_in_red_uniform.webp"
                     alt="A picture of plumbers standing next to each other in a row"
                     class="w-full h-full object-cover rounded-xl">
             </div>
 
-            <div id="HeroSection_Text" class="pl-2 py-4 pr-4 align-content">
-                <div>
-                    <aside class="">
-                        <p id="AvailabilityBadge">Available in over 50 locations</p>
-                        <h1 id="HeroTitle">We repair broken pipes for residential and commercial buildings</h1>
-                        <i id="HeroSubtitle">"Any leak, burst pipe, drain replacement, we are there for you." - The
-                            Drain Surgeon</i>
+            <!-- Hero Section Text -->
+            <div id="HeroSection_Text" class="p-4 grid items-center">
+                <div id="TextContainer">
+                    <aside class="flex flex-col gap-y-4">
+                        <div class="bg-red-600 text-white px-8 py-4 text-xl max-[960px]:text-lg max-[960px]:px-4 max-[960px]:py-2 font-medium rounded-full flex flex-row flex-nowrap grow-0 items-center gap-x-2">
+                            <span class="material-symbols-outlined">location_on</span>
+                            <p>Available in over 50 locations</p>
+                        </div>
+
+                        <h1 id="HeroTitle" class="text-5xl font-medium max-[960px]:text-4xl">
+                            We repair broken pipes for residential and commercial buildings
+                        </h1>
+
+                        <i id="HeroSubtitle" class="font-medium">
+                            "Any leak, burst pipe, drain replacement, we are there for you." - The Drain Surgeon
+                        </i>
                     </aside>
 
+                    <!-- Hero Call-to-Action Buttons -->
                     <div id="HeroButtons">
                         <a id="ServicesButton" href="/servicesPage.html">Services</a>
                         <a id="BookNowButton" href="/bookNowPage.html">Book Now</a>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section id="OurServicesSection">
-        <img class="theDrainSurgeonIconLogo" src="./public/images/[Transparent] The Drain Surgeon Logo Transparent.png"
-            alt="The Drain Surgeon Icon Logo Transparent PNG.">
+        <!-- <img src="./public/images/[Transparent] The Drain Surgeon Logo Transparent.png"
+            alt="The Drain Surgeon Icon Logo Transparent PNG." class="w-8 h-8"> -->
+        <span class></span>
         <h2 id="ServicesTitle">Our Services</h2>
 
         <div class="grid_listOfServices">
