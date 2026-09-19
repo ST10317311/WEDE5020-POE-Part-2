@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
+    <!-- Note. Your CSS files must always take last priority on the header so that it does not get overrridden by other style documents like your Material Design Symbols file. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google's Material Design Symbols -->
+    <link href="./node_modules/material-symbols/index.css" rel="stylesheet">
     <!-- CSS (TailwindCSS) - CSS but better and faster for developers and users. -->
     <link rel="stylesheet" href="./public/css/output.css">
-    <!-- Google's Material Design Symbols -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <!-- Current Page Title -->
     <title>Home - The Drain Surgeon</title>
 </head>
@@ -18,7 +19,7 @@
         class="bg-red-600 text-white px-2 py-1 flex flex-row items-center justify-between">
         <span>24/7 Emergency Service</span>
         <span class="flex flex-row flex-nowrap gap-x-2 items-center">
-            <span class="material-symbols-outlined">location_on</span>
+            <span class="material-symbols-outlined text-2xl">location_on</span>
             <span class="">350 Jan Shoba St, Hatfield, Pretoria, 0083</span>
         </span>
         <span>info@drainsurgeon.co.za</span>
@@ -59,7 +60,7 @@
             <a href="/franchisingPage.html" id="FranchisingLink">Franchising</a>
         </nav>
 
-        <a href="/bookNowPage.html" id="BookNowButton" class="p-4 bg-red-600 text-white rounded-sm">Book Now</a>
+        <a href="/bookNowPage.html" id="BookNowButton" class="px-4 py-3 bg-red-600 text-white rounded-sm">Book Now</a>
 
     </section>
 
@@ -76,10 +77,10 @@
 
             <!-- Hero Section Text -->
             <div id="HeroSection_Text" class="p-4 grid items-center">
-                <div id="TextContainer">
+                <div id="TextContainer" class="flex flex-col gap-y-4">
                     <aside class="flex flex-col gap-y-4">
-                        <div class="bg-red-600 text-white px-8 py-4 text-xl max-[960px]:text-lg max-[960px]:px-4 max-[960px]:py-2 font-medium rounded-full flex flex-row flex-nowrap grow-0 items-center gap-x-2">
-                            <span class="material-symbols-outlined">location_on</span>
+                        <div class="bg-red-600 text-white px-8 py-4 text-xl max-[960px]:text-lg max-[960px]:px-4 max-[960px]:py-2 font-medium rounded-full inline-flex flex-row flex-nowrap grow-0 items-center gap-x-2">
+                            <span class="material-symbols-outlined text-2xl">location_on</span>
                             <p>Available in over 50 locations</p>
                         </div>
 
@@ -93,34 +94,38 @@
                     </aside>
 
                     <!-- Hero Call-to-Action Buttons -->
-                    <div id="HeroButtons">
-                        <a id="ServicesButton" href="/servicesPage.html">Services</a>
-                        <a id="BookNowButton" href="/bookNowPage.html">Book Now</a>
+                    <div id="HeroButtons" class="flex flex-row items-center gap-x-4">
+                        <a id="ServicesButton" href="/servicesPage.html" class="border-2 border-red-600 text-red-600 px-3 py-2 rounded-sm">Services</a>
+                        <a id="BookNowButton" href="/bookNowPage.html" class="bg-red-600 text-red-50 px-3 py-2 rounded-sm">Book Now</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="OurServicesSection">
-        <!-- <img src="./public/images/[Transparent] The Drain Surgeon Logo Transparent.png"
-            alt="The Drain Surgeon Icon Logo Transparent PNG." class="w-8 h-8"> -->
-        <span class></span>
-        <h2 id="ServicesTitle">Our Services</h2>
-
-        <div class="grid_listOfServices">
-            <p>General 24-hour plumbing.</p>
-            <p>Geyser repairs and replacements.</p>
-            <p>Unclogging and cleaning of blocked drains.</p>
-            <p>Electornic leak detection</p>
-            <p>Repairs and replacements on burst and leak pipes.</p>
-            <p>Using CCTV Camera Drain Inspections.</p>
-            <p>Repair and cleaning of Septic Tanks and French Drains.</p>
+    <!-- Our Services Section -->
+    <section id="OurServicesSection" class="bg-gray-950 *:text-white flex flex-col gap-y-8 p-8">
+        <div class="flex flex-row gap-x-4 items-center">
+            <span class="material-symbols-outlined text-5xl p-2 bg-red-600 rounded-lg text-gray-900">handyman</span>
+            <h2 id="ServicesTitle" class="text-5xl">Our Services</h2>
         </div>
 
-        <a href="/bookNowPage.html">Book Now</a>
 
-        <a href="/seeMorePage.html">See More</a>
+        <ul class="grid grid-cols-2 items-start gap-y-2 text-2xl">
+            <li>General 24-hour plumbing.</li>
+            <li>Geyser repairs and replacements.</li>
+            <li>Unclogging and cleaning of blocked drains.</li>
+            <li>Electornic leak detection</li>
+            <li>Repairs and replacements on burst and leak pipes.</li>
+            <li>Using CCTV Camera Drain Inspections.</li>
+            <li>Repair and cleaning of Septic Tanks and French Drains.</li>
+        </ul>
+
+        <div id="OurServicesCTA" class="flex flex-row gap-x-4 self-end">
+            <a href="/seeMorePage.html" class="border-2 px-8 py-4 rounded-sm">See More</a>
+            <a href="/bookNowPage.html" class="bg-red-600 px-8 py-4 rounded-sm">Book Now</a>
+        </div>
+
     </section>
 
     <!-- Customer Reviews Section -->

@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+.center-text-x {
+    text-align: center;
+}
+.center-y {
+ align-content: center;
+}
+
+.text50 {
+    font-size: 50px;
+}
+
+.material-symbols-outlined
+{
+    font-size: revert-layer;
+}
+
+/* A Way to create Custom list style bullets. Referenced from MDN Docs. */
+ul {
+    padding-left: 2rem;
+    list-style-type: url('../images/listIcon.png');
+}
+
+ul li {
+    display: grid;
+    align-items: center;
+    padding-left: 2rem;
+    background-image: url('../images/listIcon.png');
+    background-position: 0 5px;
+    background-size: 24px;
+    background-repeat: no-repeat;
+}
