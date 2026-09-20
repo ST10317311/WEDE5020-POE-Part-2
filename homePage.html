@@ -53,7 +53,7 @@
 
         <nav class="flex flex-row flex-nowrap gap-2 *:p-4">
             <a href="/homePage.html" id="HomeLink"
-                class="border-b-2 border-b-red-600 text-red-600 bg-red-100 rounded-t-sm">Home</a>
+                class="border-b-2 border-b-red-600 text-gray-950 bg-gray-100 rounded-t-sm">Home</a>
             <a href="/aboutUsPage.html" id="AboutUsLink">About Us</a>
             <a href="/contactUsPage.html" id="ContactUsLink">Contact Us</a>
             <a href="/servicesPage.html" id="ServicesLink">Services</a>
@@ -79,7 +79,8 @@
             <div id="HeroSection_Text" class="p-4 grid items-center">
                 <div id="TextContainer" class="flex flex-col gap-y-4">
                     <aside class="flex flex-col gap-y-4">
-                        <div class="bg-red-600 text-white px-8 py-4 text-xl max-[960px]:text-lg max-[960px]:px-4 max-[960px]:py-2 font-medium rounded-full inline-flex flex-row flex-nowrap grow-0 items-center gap-x-2">
+                        <div
+                            class="bg-red-600 text-white px-8 py-4 text-xl max-[960px]:text-lg max-[960px]:px-4 max-[960px]:py-2 font-medium rounded-full inline-flex flex-row flex-nowrap grow-0 items-center gap-x-2">
                             <span class="material-symbols-outlined text-2xl">location_on</span>
                             <p>Available in over 50 locations</p>
                         </div>
@@ -95,8 +96,10 @@
 
                     <!-- Hero Call-to-Action Buttons -->
                     <div id="HeroButtons" class="flex flex-row items-center gap-x-4">
-                        <a id="ServicesButton" href="/servicesPage.html" class="border-2 border-red-600 text-red-600 px-3 py-2 rounded-sm">Services</a>
-                        <a id="BookNowButton" href="/bookNowPage.html" class="bg-red-600 text-red-50 px-3 py-2 rounded-sm">Book Now</a>
+                        <a id="ServicesButton" href="/servicesPage.html"
+                            class="border-2 px-8 py-4 rounded-sm">Services</a>
+                        <a id="BookNowButton" href="/bookNowPage.html"
+                            class="border-2 border-red-600 bg-red-600 text-red-50 px-8 py-4 rounded-sm">Book Now</a>
                     </div>
                 </div>
             </div>
@@ -129,30 +132,116 @@
     </section>
 
     <!-- Customer Reviews Section -->
-    <section id="CustomerReviewsSection">
-        <span id="IconTwo">Drain Surgeon Icon</span>
-        <h2>What Our Customers Say</h2>
-
-        <!-- This card is to be repeated three times across in the x-axis of the web page. -->
-        <div id="CustomerReviewCard">
-            <span id="UserProfileIconOne">User Profile Icon</span>
-            <span id="DateOfReviewPosted">Date of Review Posted</span>
-
-            <div>
-                <span>Username</span>
-                <span>Location</span>
-            </div>
-
-            <p>Full paragraph review of their service received.</p>
-
-            <span>Review stars and rating</span>
+    <section id="CustomerReviewsSection" class="p-8 flex flex-col gap-y-8">
+        <div class="flex flex-row items-center gap-x-8">
+            <span class="material-symbols-outlined text-5xl p-2 bg-gray-950 rounded-lg text-red-600">thumb_up</span>
+            <h2 class="text-5xl mb-1">What Our Customers Say</h2>
         </div>
 
-        <a href="/trustPilotPage">TrustPilot reviews</a>
+        <div id="GridOfCustomerReviews" class="grid grid-cols-3 grid-rows-1 gap-x-8">
+            <!-- This card is to be repeated three times across in the x-axis of the web page. -->
+            <article id="CustomerReviewCardOne" class="bg-gray-200 rounded-2xl px-8 py-6 flex flex-col gap-y-4">
+                <span id="DateOfReviewPosted" class="self-end">12 July 2026</span>
+                <div class="flex flex-row items-start gap-x-2">
+                    <span class="material-symbols-outlined text-5xl">account_circle</span>
+                    <div>
+                        <p class="font-medium">John Doe</p>
+                        <p class="font-medium">Pretoria</p>
+                    </div>
+                </div>
 
-        <a href="/seeMorePage.html">See More</a>
+                <p>Excellent plumbing service—quick, professional, and reliable. The plumber arrived on time, clearly
+                    explained the issue, and completed the work efficiently. I’m very satisfied with the service and
+                    would gladly recommend this company.</p>
 
-        <a href="/bookNowPage.html">Book Now</a>
+                <div id="Stars" class="py-2">
+                    <span class="material-symbols-outlined icon-fill">star</span>
+                    <span class="material-symbols-outlined icon-fill">star</span>
+                    <span class="material-symbols-outlined icon-fill">star</span>
+                    <span class="material-symbols-outlined icon-fill">star</span>
+                    <span class="material-symbols-outlined">star_half</span>
+                    <span>4.5/5</span>
+                </div>
+            </article>
+
+            <article id="CustomerReviewCardTwo" class="bg-gray-200 rounded-2xl px-8 py-6 flex flex-col gap-y-4">
+                <span id="DateOfReviewPosted" class="self-end">12 July 2026</span>
+                <div class="flex flex-row items-start gap-x-2">
+                    <span class="material-symbols-outlined text-5xl">account_circle</span>
+                    <div>
+                        <p class="font-medium">John Doe</p>
+                        <p class="font-medium">Pretoria</p>
+                    </div>
+                </div>
+
+                <p>Excellent plumbing service—quick, professional, and reliable. The plumber arrived on time, clearly
+                    explained the issue, and completed the work efficiently. I’m very satisfied with the service and
+                    would gladly recommend this company.</p>
+
+                <div id="Stars" class="py-2">
+                    <span class="material-symbols-outlined icon-fill">star</span>
+                    <span class="material-symbols-outlined icon-fill">star</span>
+                    <span class="material-symbols-outlined icon-fill">star</span>
+                    <span class="material-symbols-outlined icon-fill">star</span>
+                    <span class="material-symbols-outlined">star_half</span>
+                    <span>4.5/5</span>
+                </div>
+            </article>
+
+            <article id="CustomerReviewCardThree" class="bg-gray-200 rounded-2xl px-8 py-6 flex flex-col gap-y-4">
+                <span id="DateOfReviewPosted" class="self-end">12 July 2026</span>
+                <div class="flex flex-row items-start gap-x-2">
+                    <span class="material-symbols-outlined text-5xl">account_circle</span>
+                    <div>
+                        <p class="font-medium">John Doe</p>
+                        <p class="font-medium">Pretoria</p>
+                    </div>
+                </div>
+
+                <p>Excellent plumbing service—quick, professional, and reliable. The plumber arrived on time, clearly
+                    explained the issue, and completed the work efficiently. I’m very satisfied with the service and
+                    would gladly recommend this company.</p>
+
+                <div id="Stars" class="py-2">
+                    <span class="material-symbols-outlined icon-fill">star</span>
+                    <span class="material-symbols-outlined icon-fill">star</span>
+                    <span class="material-symbols-outlined icon-fill">star</span>
+                    <span class="material-symbols-outlined icon-fill">star</span>
+                    <span class="material-symbols-outlined">star_half</span>
+                    <span>4.5/5</span>
+                </div>
+            </article>
+        </div>
+
+        <div class="flex flex-row items-baseline-last justify-between">
+            <aside id="HelloPeterRating">
+                <a href="/HelloPeterReview" class="inline-flex flex-row items-center gap-x-4 p-2">
+                    <img src="./public/images/[Cropped] drain-surgeon-logo.png" alt="The Drain Surgeon Logo"
+                        class="h-14">
+                    <hr id="vr" class="border-2 border-mist-400 w-0 h-10">
+                    </hr>
+
+                    <div id="Rating">
+                        <img src="./public/images/HelloPeter_Logo.png" alt="HelloPeter Logo" class="h-8">
+                        <p>HelloPeter rating</p>
+                        <div id="Stars" class="py-2">
+                            <span class="material-symbols-outlined icon-fill p-1 text-white bg-green-600">star</span>
+                            <span class="material-symbols-outlined icon-fill p-1 text-white bg-green-600">star</span>
+                            <span class="material-symbols-outlined icon-fill p-1 text-white bg-green-600">star</span>
+                            <span class="material-symbols-outlined icon-fill p-1 text-white bg-green-600">star</span>
+                            <span class="material-symbols-outlined p-1 text-white bg-green-600">star_half</span>
+                            <span class="pl-2">4.2/5</span>
+                        </div>
+                    </div>
+                </a>
+            </aside>
+
+            <aside class="flex flex-row items-center gap-x-4">
+                <a href="/seeMorePage.html" class="border-2 px-8 py-4 rounded-sm">See More</a>
+                <a href="/bookNowPage.html"
+                    class="border-2 border-red-600 bg-red-600 px-8 py-4 rounded-sm text-white">Book Now</a>
+            </aside>
+        </div>
     </section>
 
     <!-- Our Branches Section -->
