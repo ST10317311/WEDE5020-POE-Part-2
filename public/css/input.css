@@ -31,3 +31,7 @@ ul li {
     background-size: 24px;
     background-repeat: no-repeat;
 }
+
+.icon-fill {
+    font-variation-settings: 'FILL' 1;
+}
