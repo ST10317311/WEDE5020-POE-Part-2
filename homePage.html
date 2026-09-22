@@ -8,7 +8,7 @@
     <!-- Google's Material Design Symbols -->
     <link href="./node_modules/material-symbols/index.css" rel="stylesheet">
     <!-- Material Design Symbols fallback -->
-     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <!-- CSS (TailwindCSS) - CSS but better and faster for developers and users. -->
     <link rel="stylesheet" href="./public/css/output.css">
     <!-- Current Page Title -->
@@ -89,6 +89,7 @@
 
                         <h1 id="HeroTitle" class="text-5xl font-medium max-[960px]:text-4xl">
                             We repair broken pipes for residential and commercial buildings
+                            <!-- We are the drain and pipe specialists. -->
                         </h1>
 
                         <i id="HeroSubtitle" class="font-medium">
@@ -247,16 +248,61 @@
     </section>
 
     <!-- Our Branches Section -->
-    <section id="OurBranchesSection">
-        <div>
-            Ordered (Alphabetical) list of branch locations here.
-            Add location icon to each location listed.
+    <section id="OurBranchesSection" class="bg-gray-950 *:text-white p-8 block">
+        <div class="flex flex-row items-center gap-x-8">
+            <img src="./public/images/[Transparent] The Drain Surgeon Logo Transparent.png" alt=""
+                class="size-16 p-2 bg-red-600/15 rounded-lg">
+            <h2 class="text-5xl mb-1">Our Branches</h2>
         </div>
 
-        <div>
-            <img src="/selectedLocationScreenshot"
-                alt="A selected location revealing a screenshot map of the location.">
+        <div class="grid grid-cols-2 grid-rows-1">
+            <div id="ProvincesAndLocations">
+                <div id="Provinces" class="flex flex-row flex-wrap gap-2 mt-8">
+                    <button class="text-nowrap px-3 py-2 bg-red-600 text-gray-950 rounded-full">Gauteng</button>
+                    <button class="text-nowrap px-3 py-2 bg-red-600/15 text-red-600 rounded-full">Mpumalanga</button>
+                    <button class="text-nowrap px-3 py-2 bg-red-600/15 text-red-600 rounded-full">Western Cape</button>
+                    <button class="text-nowrap px-3 py-2 bg-red-600/15 text-red-600 rounded-full">Free State</button>
+                    <button class="text-nowrap px-3 py-2 bg-red-600/15 text-red-600 rounded-full">Limpopo</button>
+                    <button class="text-nowrap px-3 py-2 bg-red-600/15 text-red-600 rounded-full">Eastern Cape</button>
+                    <button class="text-nowrap px-3 py-2 bg-red-600/15 text-red-600 rounded-full">North West</button>
+                </div>
+                <div id="Locations" class="flex flex-col items-start gap-y-2 mt-8">
+                    <button>Pretoria</button>
+                    <button>Johannesburg</button>
+                    <button>Midrand</button>
+                    <button>Vanderbijilpark</button>
+                    <button>Meyerton</button>
+                    <button>Vereeniging</button>
+                    <button>Randvaal</button>
+                    <button>Krugersdorp</button>
+                    <button>Roodepoort</button>
+                    <button>Soweto</button>
+                    <button>Westrand</button>
+                    <button>Benoni</button>
+                </div>
+            </div>
+            <div id="DirectionsAndMap" class="grid grid-cols-1 grid-rows-[auto_1fr] gap-y-8">
+                <div id="Directions">
+                    <div class="flex flex-row items-center">
+                        <span class="material-symbols-outlined">location_on</span>
+                        <span>[building number] [street name] [suburb] city] [province] [postal code]</span>
+                    </div>
+                    <p>[phone number one] (primary)</p>
+                    <p>E-mail</p>
+                </div>
+                <div id="Map" class="bg-red-600/15 w-full h-full rounded-4xl grid items-center justify-center">
+                    <!-- <img src="/selectedLocationScreenshot"
+                        alt="A selected location revealing a screenshot map of the location."> -->
+                        <div id="TemporaryPlaceholderForMap" class="flex flex-col items-center">
+                            <span class=material-symbols-outlined>location_on</span>
+                            <p>Map</p>
+                            <p>(Shows selected location)</p>
+                        </div>
+                </div>
+            </div>
         </div>
+
+
     </section>
 
     <!-- Businesses we Worked With Section -->
