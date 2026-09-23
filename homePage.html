@@ -248,70 +248,77 @@
     </section>
 
     <!-- Our Branches Section -->
-    <section id="OurBranchesSection" class="bg-gray-950 *:text-white p-8 block">
+    <section id="OurBranchesSection" class="bg-gray-950 *:text-white p-8 grid min-h-[80vh]">
         <div class="flex flex-row items-center gap-x-8">
             <img src="./public/images/[Transparent] The Drain Surgeon Logo Transparent.png" alt=""
                 class="size-16 p-2 bg-red-600/15 rounded-lg">
             <h2 class="text-5xl mb-1">Our Branches</h2>
         </div>
 
-        <div class="grid grid-cols-2 grid-rows-1">
-            <div id="ProvincesAndLocations">
-                <div id="Provinces" class="flex flex-row flex-wrap gap-2 mt-8">
-                    <button class="text-nowrap px-3 py-2 bg-red-600 text-gray-950 rounded-full">Gauteng</button>
-                    <button class="text-nowrap px-3 py-2 bg-red-600/15 text-red-600 rounded-full">Mpumalanga</button>
-                    <button class="text-nowrap px-3 py-2 bg-red-600/15 text-red-600 rounded-full">Western Cape</button>
-                    <button class="text-nowrap px-3 py-2 bg-red-600/15 text-red-600 rounded-full">Free State</button>
-                    <button class="text-nowrap px-3 py-2 bg-red-600/15 text-red-600 rounded-full">Limpopo</button>
-                    <button class="text-nowrap px-3 py-2 bg-red-600/15 text-red-600 rounded-full">Eastern Cape</button>
-                    <button class="text-nowrap px-3 py-2 bg-red-600/15 text-red-600 rounded-full">North West</button>
-                </div>
-                <div id="Locations" class="flex flex-col items-start gap-y-2 mt-8">
-                    <button>Pretoria</button>
-                    <button>Johannesburg</button>
-                    <button>Midrand</button>
-                    <button>Vanderbijilpark</button>
-                    <button>Meyerton</button>
-                    <button>Vereeniging</button>
-                    <button>Randvaal</button>
-                    <button>Krugersdorp</button>
-                    <button>Roodepoort</button>
-                    <button>Soweto</button>
-                    <button>Westrand</button>
-                    <button>Benoni</button>
-                </div>
-            </div>
-            <div id="DirectionsAndMap" class="grid grid-cols-1 grid-rows-[auto_1fr] gap-y-8">
-                <div id="Directions">
-                    <div class="flex flex-row items-center">
-                        <span class="material-symbols-outlined">location_on</span>
-                        <span>[building number] [street name] [suburb] city] [province] [postal code]</span>
+        <aside class="grid justify-center">
+            <div class="grid grid-cols-2 grid-rows-1 max-w-5xl gap-x-4 mt-8 items-start">
+                <div id="ProvincesAndLocations" class="col-span-1 row-span-1">
+                    <div id="Provinces" class="flex flex-row flex-wrap gap-2">
+                        <button class="text-nowrap px-3 py-2 bg-red-600 text-gray-950 rounded-full">Gauteng</button>
+                        <button
+                            class="text-nowrap px-3 py-2 bg-red-600/15 text-red-600 rounded-full">Mpumalanga</button>
+                        <button class="text-nowrap px-3 py-2 bg-red-600/15 text-red-600 rounded-full">Western
+                            Cape</button>
+                        <button class="text-nowrap px-3 py-2 bg-red-600/15 text-red-600 rounded-full">Free
+                            State</button>
+                        <button class="text-nowrap px-3 py-2 bg-red-600/15 text-red-600 rounded-full">Limpopo</button>
+                        <button class="text-nowrap px-3 py-2 bg-red-600/15 text-red-600 rounded-full">Eastern
+                            Cape</button>
+                        <button class="text-nowrap px-3 py-2 bg-red-600/15 text-red-600 rounded-full">North
+                            West</button>
                     </div>
-                    <p>[phone number one] (primary)</p>
-                    <p>E-mail</p>
+                    <div id="Locations" class="flex flex-col items-start gap-y-2 mt-8">
+                        <button>Pretoria</button>
+                        <button>Johannesburg</button>
+                        <button>Midrand</button>
+                        <button>Vanderbijilpark</button>
+                        <button>Meyerton</button>
+                        <button>Vereeniging</button>
+                        <button>Randvaal</button>
+                        <button>Krugersdorp</button>
+                        <button>Roodepoort</button>
+                        <button>Soweto</button>
+                        <button>Westrand</button>
+                        <button>Benoni</button>
+                    </div>
                 </div>
-                <div id="Map" class="bg-red-600/15 w-full h-full rounded-4xl grid items-center justify-center">
-                    <!-- <img src="/selectedLocationScreenshot"
+                <div id="DirectionsAndMap" class="grid grid-cols-1 grid-rows-[1fr_auto] gap-y-8 h-full">
+                    <div id="Map" class="bg-red-600/15 w-full h-full rounded-4xl grid items-center justify-center">
+                        <!-- <img src="/selectedLocationScreenshot"
                         alt="A selected location revealing a screenshot map of the location."> -->
                         <div id="TemporaryPlaceholderForMap" class="flex flex-col items-center">
                             <span class=material-symbols-outlined>location_on</span>
                             <p>Map</p>
                             <p>(Shows selected location)</p>
                         </div>
+                    </div>
+                    <div id="Directions">
+                        <div class="flex flex-row items-center">
+                            <span class="material-symbols-outlined">location_on</span>
+                            <span>[building number] [street name] [suburb] city] [province] [postal code]</span>
+                        </div>
+                        <p>[phone number one] (primary)</p>
+                        <p>E-mail</p>
+                    </div>
                 </div>
             </div>
-        </div>
-
+        </aside>
 
     </section>
 
     <!-- Businesses we Worked With Section -->
     <section id="BusinessesWeWorkedWithSection" class="gap-y-8 p-8">
         <div class="flex flex-row items-center gap-x-8">
-            <span class="material-symbols-outlined text-5xl p-2 bg-gray-950 rounded-lg text-red-600">corporate_fare</span>
+            <span
+                class="material-symbols-outlined text-5xl p-2 bg-gray-950 rounded-lg text-red-600">corporate_fare</span>
             <h2 class="text-5xl mb-1">Businesses We Worked With</h2>
         </div>
-        
+
         <aside class="grid grid-cols-5 row-auto items-center justify-center gap-12 m-12">
             <a href="">
                 <img src="./public/logos/McDonald's_Symbol_1.png" alt="McDonald's Logo">
@@ -346,9 +353,66 @@
         </aside>
     </section>
 
+    <!-- Our Other Services Section -->
+    <section id="OurOtherServicesSection" class="bg-gray-950 p-8">
+        <div class="flex flex-row items-center gap-x-8">
+            <span
+                class="material-symbols-outlined text-5xl p-2 bg-red-600 rounded-lg text-gray-950">home_repair_service</span>
+            <h2 class="text-5xl mb-1 text-white">Our Other Services</h2>
+        </div>
+        <aside class="grid justify-center text-white mt-8">
+            <div class="w-6xl grid grid-cols-[1fr_auto_1fr_auto_1fr] gap-x-16 justify-evenly">
+                <article class="grid gap-y-2 items-start">
+                    <div class="flex flex-row items-center gap-x-4">
+                        <span
+                            class="material-symbols-outlined bg-gray-950 text-red-600 border-2 border-red-600 p-4 rounded-2xl text-4xl">
+                            plumbing
+                        </span>
+                        <h3 class="text-2xl font-medium">The Drain Surgeon</h3>
+                    </div>
+
+                    <div>
+                        <p>Plumbing, drainage cleaning and repairs.</p>
+                    </div>
+
+                </article>
+                <hr id="vr" class="border-2 border-mist-400 w-0 h-full">
+                <article class="grid gap-y-2 items-start">
+                    <div class="flex flex-row items-center gap-x-4">
+                        <span
+                            class="material-symbols-outlined bg-gray-950 text-red-600 border-2 border-red-600 p-4 rounded-2xl text-4xl">
+                            bolt
+                        </span>
+                        <h3 class="text-2xl font-medium">The Electro Surgeon</h3>
+                    </div>
+                    <div class="">
+                        <p>Electrical repairs and component replacements for households and businesses.</p>
+                    </div>
+                </article>
+                <hr id="vr" class="border-2 border-mist-400 w-0 h-full">
+                <article class="grid gap-y-2 items-start">
+                    <div class="flex flex-row items-center gap-x-4">
+                        <span
+                            class="material-symbols-outlined bg-gray-950 text-red-600 border-2 border-red-600 p-4 rounded-2xl text-4xl">
+                            ac_unit
+                        </span>
+                        <h3 class="text-2xl font-medium">The Aircon Surgeon</h3>
+                    </div>
+                    <p>Climate control and cooling specialists.</p>
+                </article>
+            </div>
+        </aside>
+    </section>
+
     <!-- Upcoming Franchises Section -->
     <section id="UpComingFranchisesSection">
-        <!-- List of Franchises with their own logos. -->
+        <div class="flex flex-row items-center gap-x-8 p-8">
+            <span class="material-symbols-outlined text-5xl p-2 rounded-lg text-red-600 bg-gray-950">add_business</span>
+            <h2 class="text-5xl">Upcoming franchises</h2>
+        </div>
+        <div>
+
+        </div>
     </section>
 
     <section id="CallToActionSection">
